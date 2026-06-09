@@ -1,3 +1,10 @@
+
+
+
+https://github.com/user-attachments/assets/bc46f61d-94a0-4863-b5cb-4c55b40afdd1
+
+
+
 # Практична робота №7
 
 ## Дисципліна
