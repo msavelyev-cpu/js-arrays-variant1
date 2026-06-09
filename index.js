@@ -33,56 +33,56 @@ while (running) {
 
             break;
 
-        case "2":
+ case "2":
 
-            const faculty =
-                readline.question("Введіть факультет: ");
+    const faculty =
+        readline.question("Faculty: ");
 
-            const minGpa =
-                Number(
-                    readline.question(
-                        "Введіть мінімальний GPA (0-100): "
-                    )
-                );
+    const minGpa =
+        Number(
+            readline.question(
+                "Minimum GPA (0-100): "
+            )
+        );
 
-            console.log("\nРезультат фільтрації:");
+    console.log("\nРезультат фільтрації:");
 
-            console.table(
-                filterStudents(
-                    students,
-                    faculty,
-                    minGpa
-                )
-            );
+    console.table(
+        filterStudents(
+            students,
+            faculty,
+            minGpa
+        )
+    );
 
-            break;
+    break;
 
-        case "3":
+case "3":
 
-            const field =
-                readline.question(
-                    "Сортувати за (name / age / gpa): "
-                );
+    const field =
+        readline.question(
+            "Sort by (name / age / gpa): "
+        );
 
-            const order =
-                readline.question(
-                    "Порядок (ASC / DESC): "
-                );
+    const order =
+        readline.question(
+            "Order (ASC / DESC): "
+        );
 
-            const asc =
-                order.toUpperCase() === "ASC";
+    const asc =
+        order.toUpperCase() === "ASC";
 
-            console.log("\nВідсортований список:");
+    console.log("\nВідсортований список:");
 
-            console.table(
-                bubbleSort(
-                    students,
-                    field,
-                    asc
-                )
-            );
+    console.table(
+        bubbleSort(
+            students,
+            field,
+            asc
+        )
+    );
 
-            break;
+    break;
 
         case "4":
 
