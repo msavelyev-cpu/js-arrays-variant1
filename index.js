@@ -47,15 +47,19 @@ while (running) {
 
     console.log("\nРезультат фільтрації:");
 
-    console.table(
-        filterStudents(
-            students,
-            faculty,
-            minGpa
-        )
-    );
+const filtered = filterStudents(
+    students,
+    faculty,
+    minGpa
+);
 
-    break;
+if (filtered.length === 0) {
+    console.log("Студентів не знайдено.");
+} else {
+    console.table(filtered);
+}
+
+break;
 
 case "3":
 
